@@ -1,0 +1,135 @@
+/* Estilos para las fuentes personalizadas */
+@font-face {
+    font-family: Celtica-bold;
+    src: url('Fonts/Celtica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Celtica-boldOblique;
+    src: url('Fonts/Celtica-BoldOblique.ttf') format('truetype');
+}
+
+/* Estilos generales del body */
+body {
+    background-color: rgb(16, 19, 44);
+    background-image: url("img/tumblr_132ef3039f7227a96c40aa7a1d18bd47_ebc233ba_640.gif");
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+  
+    background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la pantalla */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.Final {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Estilos personalizados para el reproductor de audio */
+.custom-audio {
+    width: 50%; /* Ancho del reproductor de audio personalizado (50%) */
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Celtica-bold;
+    padding: 50px;
+    box-shadow: 0 0 30px , #3498db; /* Agrega un brillo alrededor del botón al pasar el mouse */
+}
+
+.custom-audio audio {
+    width: 100%; /* Ancho completo del reproductor de audio */
+    background-color: #eef3ff00; /* Color de fondo del reproductor */
+    box-shadow: #3498db;
+    opacity: 60%;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px;
+    transition: 0.5s;
+ 
+}
+.custom-audio audio:hover {
+    width: 100%; /* Ancho completo del reproductor de audio */
+    background-color: #eef3ff00; /* Color de fondo del reproductor */
+    box-shadow: #3498db;
+    opacity: 60%;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px;
+    transform: scale(1.1);
+    transition: 0.5s;
+   
+}
+
+/* Personaliza el botón de reproducción */
+.custom-audio audio::-webkit-media-controls-play-button:before {
+    content: "▶"; /* Cambia el icono del botón de reproducción */
+    font-size: 24px; /* Tamaño del icono */
+    color: #3498db00; /* Color del icono */
+}
+
+/* Personaliza el fondo de los controles de volumen */
+.custom-audio audio::-webkit-media-controls-volume-slider-container {
+    background-color: red;
+}
+
+/* Personaliza la barra de volumen */
+.custom-audio audio::-webkit-media-controls-volume-slider {
+    width: 100%; /* Ancho completo de la barra de volumen */
+    background-color: #3498db00; /* Color de la barra de volumen */
+    height: 6px; /* Altura de la barra de volumen */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Personaliza el deslizador de volumen */
+.custom-audio audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+    background-color: #3498db00; /* Color del deslizador de volumen */
+    width: 10px; /* Ancho del deslizador */
+    height: 10px; /* Altura del deslizador */
+    border-radius: 50%; /* Bordes redondeados */
+}
+
+/* Estilos para la imagen del camino */
+.CaminoT {
+    height: auto; /* Altura automática según el contenido */
+    max-width: 100%; /* Ancho máximo del 100% */
+    opacity: 10%;
+    transition: 1.5s;
+}
+.CaminoT:hover {
+    height: auto; /* Altura automática según el contenido */
+    max-width: 100%; /* Ancho máximo del 100% */
+    opacity: 100%;
+    transition: 1.5s;
+}
+
+
+.btnX{
+    
+    background-image: url("img/X.png");
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+  
+        background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la pantalla */
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    margin-left: 65vw;
+    margin-bottom: 2vw;
+    border: transparent;
+    transition: 0.5s;
+}
+.btnX:hover{
+    transition: 0.5s;
+    background-image: url("img/x2.png");
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+  
+        background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la pantalla */
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    margin-left: 65vw;
+    margin-bottom: 2vw;
+    border: transparent;
+    transform: scale(1.1);
+   
+}
